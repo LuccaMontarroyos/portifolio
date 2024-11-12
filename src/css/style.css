@@ -383,6 +383,10 @@ footer ul li a {
         display: none;
     }
 
+    .about .about-container {
+        flex-direction: column;
+    }
+
     .input-box input {
         padding: 1rem 2rem;
         font-size: 1.8rem;
@@ -393,7 +397,8 @@ footer ul li a {
     }
 
     .input-box i {
-        display: none;
+       
+        transform: translateX(-30px);
     }
 
     .grid {
@@ -406,8 +411,11 @@ footer ul li a {
 }
 
 @media(max-width: 600px) {
+    
+    
     header #menu-icon {
         display: block;
+        
     }
 
     .nav-links {
@@ -434,6 +442,9 @@ footer ul li a {
         display: block;
     }
 
+    .section-title {
+        font-size: 2.5rem;
+    }
 }
 
 
