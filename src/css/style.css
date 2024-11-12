@@ -278,6 +278,7 @@ section {
     font-weight: 500;
 }
 
+
 .input-box {
     display: flex;
     flex-direction: column;
@@ -308,7 +309,7 @@ section {
     font-size: 4rem;
     top: 50%;
     left: 10px;
-    transform: translate(50%, -50%);
+    transform: translateX(-50px);
 }
 
 footer {
