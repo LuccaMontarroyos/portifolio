@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Website</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Lucca Barros</span></a>
+        <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <button onclick="visitGitHub()" class="visit-btn">Visit Github</button>
+    </header>
+
+    <section id="sobre" class="about">
+        <div class="about-container">
+            <img src="src/assets/images/foto-perfil.png" alt="foto de perfil">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Olá 👋</h3>
+                    <h1>Eu sou Lucca Barros</h1>
+                    <span>Desenvolvedor Fullstack</span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn" onclick="downloadCV()">Download CV</div>
+                    <a href="#contato">
+                        <div class="btn" onclick="contactMe()">Contato</div>
+                    </a>
+                </div>
+
+                <div class="social">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="experience">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-brands fa-react"></i>
+                    <span>React.js</span>
+                    <p>Com conhecimento em html, css e js consigo fazer uma junção dessas 3 linguagens com a biblioteca
+                        do React.js, utilizando a lógica da aplicação com hooks, montando elementos dentro do próprio
+                        componente e estilizando com styled-components</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-brands fa-node"></i>
+                    <span>Node.js</span>
+                    <p>No backend utilizo o Node.js, linguagem com que me dei muito bem logo de cara e me familiarizei
+                        assim que comecei a codar com ela, é realmente simples de entender e manipular rotas.</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-brands fa-node-js"></i>
+                    <span>Express.js</span>
+                    <p>Já possuo projetos pessoais feitos com esse framework e só tenho a aumentar a quantidade deles,
+                        realmente um grande facilitador para estabelecer a conexão do servidor ali através do request
+                        com a response, juntamente utilizando o thunder client como um grande auxiliador</p>
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span>PostgreSql</span>
+                    <p>Manipulando e criando banco de dados para integrá-lo as aplicações através do postgreSql, e o
+                        prisma client para fazer toda essa junção de componentes.</p>
+                </div>
+
+
+            </div>
+            <img src="src/assets/images/foto-perfil2.jpeg" alt="foto de perfil">
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <h2 class="section-title">Projetos recentes</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="src/assets/images/ip-address-tracker.png" alt="projeto ip address tracker">
+                <h3>IP ADDRESS TRACKER</h3>
+                <p>Projeto desenvolvido com um input para o usuário digitar um endereço de ip e abaixo aparecer um card
+                    com dados e localização</p>
+                <div class="btn-group">
+                    <div class="btn" onclick="openIpAddressTracker()">Github repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="src/assets/images/pokemon-app.png" alt="projeto pokemon app">
+                <h3>POKEMON APP</h3>
+                <p>SPA com integração a uma API de pokemons, contendo uma listagem e uma página com as infos do pokemon
+                    escolhido</p>
+                <div class="btn-group" >
+                    <div class="btn" onclick="openPokemonApp()">Github repo</div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="src/assets/images/advice-generator.png" alt="app advice generator">
+                <h3>ADVICE GENERATOR APP</h3>
+                <p>Aplicação inegrada com uma API geradora de conselhos, desenvolvida com o intuito de a cada clique,
+                    mostrar um conselho ao usuário.</p>
+                <div class="btn-group">
+                    <div class="btn" onclick="openAdviceGenerator()">Github repo</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="input-box">
+
+            <h2 class="section-title">Contate-me</h2>
+
+            <div class="input">
+                <input id="email-input" type="text" placeholder="Envie aqui">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="btn" onclick="sendEmail()">Enviar</div>
+        </div>
+    </section>
+
+    <div class="game-section">
+        <button onclick="window.location.href='game.html'" class="game-button">Jogar Senha (Bulls and Cows)</button>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projeto</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <p class="copyright">Projeto Portifólio | Lucca Barros</p>
+    </footer>
+
+    <script src="src/assets/script.js"></script>
+</body>
+
+</html>
