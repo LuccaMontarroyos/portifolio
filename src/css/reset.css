@@ -15,5 +15,5 @@ a {
 }
 
 a:visited {
-    rgb(0, 157, 255)   
+    color:rgb(0, 157, 255);
 }
