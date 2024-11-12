@@ -13,3 +13,7 @@ ul li {
 a {
     text-decoration: none;
 }
+
+a:visited {
+    color: #000;
+}
