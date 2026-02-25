@@ -23,19 +23,19 @@ const projectsConfig = [
     ],
     githubUrl: "https://github.com/LuccaMontarroyos/flowly-saas",
     demoUrl: "https://flowly-saas.vercel.app/auth/register",
-    imageUrl: "src/assets/flowly.png",
+    imageUrl: "/flowly.png",
     isFeatured: true,
   },
   {
     id: "convit3",
     tags: ["Next.js", "NestJS", "Prisma ORM", "PostgreSQL", "TypeScript"],
-    imageUrl: "src/assets/convite.png",
+    imageUrl: "/convite.png",
     githubUrl: "https://github.com/LuccaMontarroyos/projeto-convit3"
   },
   {
     id: "doctorSchedule",
     tags: ["Next.js", "Drizzle ORM", "PostgreSQL", "TypeScript"],
-    imageUrl: "src/assets/doctor-schedule.png",
+    imageUrl: "/doctor-schedule.png",
     githubUrl: "https://github.com/LuccaMontarroyos/doctor-schedule"
   },
   {
@@ -44,13 +44,13 @@ const projectsConfig = [
       "Next.js", "Node.js", "Express", "Prisma ORM", "PostgreSQL", "Stripe", "JWT"
     ],
     githubUrl: "https://github.com/LuccaMontarroyos/marketplace",
-    imageUrl: "src/assets/marketplace.png",
+    imageUrl: "/marketplace.png",
     isFeatured: true
   },
   {
     id: "postApp",
     tags: ["AngularJS", "Node.js", "Sequelize ORM", "PostgreSQL"],
-    imageUrl: "src/assets/post-app.png",
+    imageUrl: "/post-app.png",
     githubUrl: "https://github.com/LuccaMontarroyos/medium-post-app"
   },
 ];
